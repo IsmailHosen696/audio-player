@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+.container {
+  display: flex;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(209, 209, 209);
+}
+.container > h1 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+.audioplayer {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.audioplayer > img {
+  margin-top: 1rem;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.player {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+.playmusic {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  width: 100%;
+}
+.tracker {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.2rem;
+}
+.track {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 1rem;
+  height: 5px;
+  transition: all 0.1s ease-in-out linear;
+  cursor: pointer;
+  background-color: rgb(209, 209, 209);
+}
+.insidetrack {
+  transition: all 0.1s ease-in-out linear;
+  border-radius: 1rem;
+  width: 10%;
+  height: 100%;
+  background-color: rosybrown;
+  position: relative;
+  cursor: pointer;
+}
+.actions {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fas {
+  display: flex;
+  color: #fff;
+  border: none;
+  border-radius: 100%;
+  width: 3rem;
+  background-color: #ff9c95;
+  height: 3rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.selectMusic {
+  flex-direction: column;
+  margin-top: 0.5rem;
+}
+#selectedId {
+  margin-top: 0.5rem;
+  outline: none;
+  border: none;
+}
+#resetBtn {
+  margin-top: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background-color: rgb(202, 78, 95);
+}
